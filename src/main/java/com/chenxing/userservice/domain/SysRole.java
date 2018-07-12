@@ -1,7 +1,7 @@
 package com.chenxing.userservice.domain;
 
 /**
- * Created by yangyibo on 17/1/17.
+ * Created by liuxing on 17/1/17.
  */
 
 public class SysRole {

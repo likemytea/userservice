@@ -18,7 +18,7 @@ import com.chenxing.userservice.domain.Permission;
 import com.chenxing.userservice.domain.SysUser;
 
 /**
- * Created by yangyibo on 17/1/18.
+ * Created by liuxing on 17/1/18.
  */
 @Service
 public class CustomUserService implements UserDetailsService { //自定义UserDetailsService 接口

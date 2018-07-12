@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.chenxing.userservice.domain.Msg;
 
 /**
- * Created by yangyibo on 17/1/18.
+ * Created by liuxing on 17/1/18.
  */
 @Controller
 public class HomeController {

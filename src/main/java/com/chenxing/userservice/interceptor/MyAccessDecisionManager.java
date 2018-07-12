@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
- * Created by yangyibo on 17/1/19.
+ * Created by liuxing on 17/1/19.
  */
 @Service
 public class MyAccessDecisionManager implements AccessDecisionManager {

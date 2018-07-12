@@ -12,7 +12,7 @@ import org.springframework.security.web.access.intercept.FilterSecurityIntercept
 import com.chenxing.userservice.interceptor.MyFilterSecurityInterceptor;
 
 /**
- * Created by yangyibo on 17/1/18.
+ * Created by liuxing on 17/1/18.
  */
 
 @Configuration

@@ -20,7 +20,7 @@ import com.chenxing.userservice.dao.PermissionDao;
 import com.chenxing.userservice.domain.Permission;
 
 /**
- * Created by yangyibo on 17/1/19.
+ * Created by liuxing on 17/1/19.
  */
 @Service
 public class MyInvocationSecurityMetadataSourceService implements FilterInvocationSecurityMetadataSource {

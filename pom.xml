@@ -50,7 +50,7 @@
         </dependency>
         <dependency>
 			<groupId>com.chenxing</groupId>
-			<artifactId>common2</artifactId>
+			<artifactId>common3</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>

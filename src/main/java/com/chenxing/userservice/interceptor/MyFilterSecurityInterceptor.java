@@ -9,6 +9,8 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.SecurityMetadataSource;
 import org.springframework.security.access.intercept.AbstractSecurityInterceptor;
@@ -22,7 +24,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor implements Filter {
-
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private FilterInvocationSecurityMetadataSource securityMetadataSource;
@@ -47,6 +49,7 @@ public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor imp
 
 
     public void invoke(FilterInvocation fi) throws IOException, ServletException {
+		log.info(fi.getRequestUrl());
 //fi里面有一个被拦截的url
 //里面调用MyInvocationSecurityMetadataSource的getAttributes(Object object)这个方法获取fi对应的所有权限
 //再调用MyAccessDecisionManager的decide方法来校验用户的权限是否足够

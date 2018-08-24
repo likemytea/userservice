@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8"/>
@@ -35,7 +35,7 @@
                             <span><img alt="image" class="img-circle" src="http://test.mystaticdomain.com/img/profile_small.jpg" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="http://test.mystaticdomain.com/#">
                                 <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
+                               <span th:text="${msg.etraInfo}" class="block m-t-xs"><strong class="font-bold"></strong></span>
                                 <span class="text-muted text-xs block"><a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/homepage}">超级管理员</a><b class="caret"></b></span>
                                 </span>
                             </a>
